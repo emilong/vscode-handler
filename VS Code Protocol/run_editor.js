@@ -1,5 +1,5 @@
 var	url = WScript.Arguments(0),
-    match = /^vscode:\/\/open\/\?url=file:\/\/(.+)&line=(\d+)$/.exec(url),
+    match = /^vs-code:\/\/open\/\?url=file:\/\/(.+)&line=(\d+)$/.exec(url),
     editor = 'code';
 
 if (match) {

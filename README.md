@@ -1,10 +1,10 @@
 # Visual Studio Code URL Handler
-A `vscode://` *URL handler* for **[Visual Studio Code](https://code.visualstudio.com/)** on three main platform (Windows, Mac, Ubuntu).
+A `vs-code://` *URL handler* for **[Visual Studio Code](https://code.visualstudio.com/)** on three main platform (Windows, Mac, Ubuntu).
 
 Following string must be specified as an editor in your app:
 
 ```bash
-vscode://open?url=file://%file&line=%line
+vs-code://open?url=file://%file&line=%line
 ```
 
 Might not be stable right now. If something doesn't work, then feel free to [submit an issue](https://github.com/shengyou/vscode-handler/issues/new) on GitHub.
@@ -86,7 +86,7 @@ The app doesn’t open? [Don’t panic!](https://onflapp.wordpress.com/support/a
 
 
 
-# Using with [Laravel Tracy](https://github.com/recca0120/laravel-tracy) 
+# Using with [Laravel Tracy](https://github.com/recca0120/laravel-tracy)
 
 #### Steps:
 
@@ -117,7 +117,7 @@ The app doesn’t open? [Don’t panic!](https://onflapp.wordpress.com/support/a
    ```bash
    return [
    	//...
-       'editor' => 'vscode://open?url=file://%file&line=%line',
+       'editor' => 'vs-code://open?url=file://%file&line=%line',
        //...
    ];
    ```

@@ -26,10 +26,10 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>Visual Studio URI Handler for vscode:// URIs</string>
+			<string>Visual Studio URI Handler for vs-code:// URIs</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>vscode</string>
+				<string>vs-code</string>
 			</array>
 		</dict>
 	</array>
