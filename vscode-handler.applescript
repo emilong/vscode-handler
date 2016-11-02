@@ -5,6 +5,7 @@ on open location vscode_url
 	set vscode_opts to " -g -r "
 	set vscode_file to ""
 	set vscode_line to 0
+	set vscode_column to 0
 	
 	# Get the args from the end of the URL.
 	set x to the offset of "?" in vscode_url
@@ -36,10 +37,12 @@ on open location vscode_url
 				end if
 			else if vscode_key = "line" then
 				set vscode_line to vscode_value
+			else if vscode_key = "column" then
+				set vscode_column to vscode_value
 			end if
 		end if
 	end repeat
 	
-	do shell script vscoode_path & vscode_opts & vscode_file & ":" & vscode_line
+	do shell script vscoode_path & vscode_opts & vscode_file & ":" & vscode_line & ":" & vscode_column
 	
 end open location
